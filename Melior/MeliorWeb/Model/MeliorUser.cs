@@ -1,9 +1,8 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 
-namespace MeliorWeb.Data
+namespace MeliorWeb.Model
 {
-    // Add profile data for application users by adding properties to the ApplicationUser class
-    public class ApplicationUser : IdentityUser
+    public class MeliorUser : IdentityUser
     {
         public string FullName { get; set; }
         public int Age { get; set; }
@@ -11,5 +10,4 @@ namespace MeliorWeb.Data
         public double Experience { get; set; }
         public int Streak { get; set; }
     }
-
 }
